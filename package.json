@@ -1,0 +1,13 @@
+{
+  "name": "farhan-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "local_server.js",
+  "scripts": {
+    "dev": "node local_server.js",
+    "start": "node local_server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
