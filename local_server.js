@@ -31,6 +31,24 @@ const server = http.createServer((req, res) => {
     decodedPath = req.url.split('?')[0];
   }
 
+  // Route protection: Redirect separate pages to single-page anchor sections
+  const normalizedPath = decodedPath.toLowerCase().replace(/\/+$/, '');
+  const routeRedirects = {
+    '/about': '/#about',
+    '/service': '/#services',
+    '/services': '/#services',
+    '/portfolio': '/#portfolio',
+    '/projects': '/#portfolio',
+    '/blog': '/#blog',
+    '/contact': '/#contact'
+  };
+
+  if (routeRedirects[normalizedPath]) {
+    res.writeHead(302, { 'Location': routeRedirects[normalizedPath] });
+    res.end();
+    return;
+  }
+
   // Check rewrites
   if (decodedPath === '/' || decodedPath === '') {
     decodedPath = '/index.html';

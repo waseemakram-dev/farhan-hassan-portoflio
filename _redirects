@@ -1,0 +1,15 @@
+# Netlify Redirects for Farhan Portfolio Single Page
+/about        /#about       302!
+/about/       /#about       302!
+/services     /#services    302!
+/services/    /#services    302!
+/service      /#services    302!
+/service/     /#services    302!
+/portfolio    /#portfolio   302!
+/portfolio/   /#portfolio   302!
+/projects     /#portfolio   302!
+/projects/    /#portfolio   302!
+/blog         /#blog        302!
+/blog/        /#blog        302!
+/contact      /#contact     302!
+/contact/     /#contact     302!

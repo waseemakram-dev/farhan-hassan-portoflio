@@ -22,3 +22,7 @@ desktop.ini
 
 # Log files
 *.log
+
+# Unused assets archive
+not_usable/
+.netlify/
