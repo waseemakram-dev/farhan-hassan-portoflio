@@ -41,7 +41,9 @@
     html {
       scroll-behavior: smooth !important;
     }
-    section[id], div[id] {
+
+    section[id],
+    div[id] {
       scroll-margin-top: 80px;
     }
 
@@ -69089,25 +69091,21 @@ Copyright (c) 2015 Daniel Eden
                 </div>
               </div>
             </section>
-            <!-- FIXED VIDEO BACKGROUND SECTION (COMPANY + ABOUT) -->
+            <!-- BACKGROUND IMAGE SECTION (COMPANY + ABOUT) -->
             <div class="fixed-video-bg-section"
-              style="position: relative; overflow: hidden; clip-path: inset(0); -webkit-clip-path: inset(0);">
-              <!-- Fixed Video Background Layer -->
+              style="position: relative; overflow: hidden; clip-path: inset(0); -webkit-clip-path: inset(0); background-color: #0c0d0e;">
+              <!-- Videographer Fixed Background Image Layer with subtle opacity -->
               <div
-                style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; overflow: hidden;">
-                <video autoplay muted loop playsinline
-                  style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); object-fit: cover;">
-                  <source src="/assets/videos/ssstik.io_@yuyenwng_1788000440579.mp4" type="video/mp4">
-                </video>
-                <!-- Dark Overlay on top of video -->
-                <div
-                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.52); z-index: 1;">
-                </div>
+                style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-image: url('/assets/images/company-bg.jpg'), url('https://img.magnific.com/free-photo/african-american-videographer-works-editing-film-footage-home_482257-120281.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.18; pointer-events: none; z-index: 1;">
+              </div>
+              <!-- Gradient Overlay for contrast -->
+              <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(12,13,14,0.4) 0%, rgba(12,13,14,0.75) 100%); pointer-events: none; z-index: 1;">
               </div>
 
-              <!-- Content Layer on top of dark overlay -->
+              <!-- Content Layer on top of background -->
               <div style="position: relative; z-index: 2;">
-                <div class="company-design-area">
+                <div class="company-design-area" style="padding: 70px 0;">
                   <div class="container">
                     <div class="row">
                       <div class="col-lg-12">
@@ -69271,7 +69269,9 @@ Copyright (c) 2015 Daniel Eden
                       <h4
                         style="font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; text-transform: uppercase;">
                         Color Grading &amp; FX</h4>
-                      <p style="color: #666; font-size: 14px; line-height: 1.6;">Cinematic color correction and stylized grading to give your raw footage Hollywood-grade depth, vibrant skin tones, and atmospheric visuals.</p>
+                      <p style="color: #666; font-size: 14px; line-height: 1.6;">Cinematic color correction and stylized
+                        grading to give your raw footage Hollywood-grade depth, vibrant skin tones, and atmospheric
+                        visuals.</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6">
@@ -69287,7 +69287,9 @@ Copyright (c) 2015 Daniel Eden
                       <h4
                         style="font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; text-transform: uppercase;">
                         Sound Design &amp; SFX</h4>
-                      <p style="color: #666; font-size: 14px; line-height: 1.6;">Immersive audio engineering with crystal-clear vocal isolation, high-energy foley sound effects, and balanced audio mastering for maximum impact.</p>
+                      <p style="color: #666; font-size: 14px; line-height: 1.6;">Immersive audio engineering with
+                        crystal-clear vocal isolation, high-energy foley sound effects, and balanced audio mastering for
+                        maximum impact.</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6">
@@ -69303,7 +69305,9 @@ Copyright (c) 2015 Daniel Eden
                       <h4
                         style="font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; text-transform: uppercase;">
                         Motion Graphics</h4>
-                      <p style="color: #666; font-size: 14px; line-height: 1.6;">Retention-focused motion titles, kinetic typography, sleek lower thirds, and animated callouts to keep viewers glued to your content.</p>
+                      <p style="color: #666; font-size: 14px; line-height: 1.6;">Retention-focused motion titles,
+                        kinetic typography, sleek lower thirds, and animated callouts to keep viewers glued to your
+                        content.</p>
                     </div>
                   </div>
                 </div>
@@ -69433,49 +69437,50 @@ Copyright (c) 2015 Daniel Eden
                 </div>
                 <div class="row blog-post-box align-items-center">
                   <div class="col-lg-6">
-                    <div class="blog-post-img">
-                      <a href="#"><img src="/_nuxt/blog1.vWXCQP4r.jpg" alt="" /></a>
-                      <div class="blog-post-category"><a href="#">SEO</a></div>
+                    <div class="blog-post-img" style="cursor:pointer;" onclick="openArticleModal('Color Grading', 'Aug 28, 2026', 'The Art of Cinematic Color Grading: How to Turn Flat Log Footage into Hollywood Film', '<p>Color grading is where videos transform from amateur recordings into cinematic visual experiences. When shooting in flat LOG profiles, you capture the maximum dynamic range, but the real magic happens in post-production.</p><h4 style=\'margin-top:20px; color:#111;\'>1. Balancing Exposure & Contrast</h4><p>Before applying any creative LUTs, normalize your footage. Set your true black points, adjust the midtones for clean exposure, and protect your highlights from clipping.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Skin Tone Protection & Vectorscope</h4><p>The human eye is remarkably sensitive to skin tones. Use vectorscopes to isolate skin tones along the skin-tone indicator line before applying stylized color washes.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Film Emulation & Lighting Accents</h4><p>Add subtle halation, atmospheric film grain, and custom split-toning (teal in the shadows, warm gold in the highlights) to give depth and separation.</p>', '/_nuxt/blog1.vWXCQP4r.jpg')">
+                      <a href="javascript:void(0);"><img src="/_nuxt/blog1.vWXCQP4r.jpg" alt="Color Grading" /></a>
+                      <div class="blog-post-category"><a href="javascript:void(0);">Color Grading</a></div>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="blog-post-caption">
                       <h3>Posted on Aug 28</h3>
-                      <h2><a class="link-decoration" href="#">How to Optimize Your YouTube Videos for the 2026
-                          Algorithm</a></h2>
-                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                      <h2><a class="link-decoration" href="javascript:void(0);" onclick="openArticleModal('Color Grading', 'Aug 28, 2026', 'The Art of Cinematic Color Grading: How to Turn Flat Log Footage into Hollywood Film', '<p>Color grading is where videos transform from amateur recordings into cinematic visual experiences. When shooting in flat LOG profiles, you capture the maximum dynamic range, but the real magic happens in post-production.</p><h4 style=\'margin-top:20px; color:#111;\'>1. Balancing Exposure & Contrast</h4><p>Before applying any creative LUTs, normalize your footage. Set your true black points, adjust the midtones for clean exposure, and protect your highlights from clipping.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Skin Tone Protection & Vectorscope</h4><p>The human eye is remarkably sensitive to skin tones. Use vectorscopes to isolate skin tones along the skin-tone indicator line before applying stylized color washes.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Film Emulation & Lighting Accents</h4><p>Add subtle halation, atmospheric film grain, and custom split-toning (teal in the shadows, warm gold in the highlights) to give depth and separation.</p>', '/_nuxt/blog1.vWXCQP4r.jpg')">The Art of Cinematic Color Grading: How to Turn Flat Log Footage into Hollywood Film</a></h2>
+                      <p style="color:#666; font-size:14px; margin-bottom:15px; line-height:1.6;">Mastering tone curves, skin-tone isolation, and custom teal & orange palettes to give your YouTube videos a Hollywood aesthetic.</p>
+                      <a class="theme-btn theme-btn-two" href="javascript:void(0);" onclick="openArticleModal('Color Grading', 'Aug 28, 2026', 'The Art of Cinematic Color Grading: How to Turn Flat Log Footage into Hollywood Film', '<p>Color grading is where videos transform from amateur recordings into cinematic visual experiences. When shooting in flat LOG profiles, you capture the maximum dynamic range, but the real magic happens in post-production.</p><h4 style=\'margin-top:20px; color:#111;\'>1. Balancing Exposure & Contrast</h4><p>Before applying any creative LUTs, normalize your footage. Set your true black points, adjust the midtones for clean exposure, and protect your highlights from clipping.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Skin Tone Protection & Vectorscope</h4><p>The human eye is remarkably sensitive to skin tones. Use vectorscopes to isolate skin tones along the skin-tone indicator line before applying stylized color washes.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Film Emulation & Lighting Accents</h4><p>Add subtle halation, atmospheric film grain, and custom split-toning (teal in the shadows, warm gold in the highlights) to give depth and separation.</p>', '/_nuxt/blog1.vWXCQP4r.jpg')">Read Article <i class="ri-arrow-right-line"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="row blog-post-box align-items-center">
                   <div class="col-lg-6">
-                    <div class="blog-post-img">
-                      <a href="#"><img src="/_nuxt/blog2.DjGpjiaV.jpg" alt="" /></a>
-                      <div class="blog-post-category"><a href="#">Script Writing</a></div>
+                    <div class="blog-post-img" style="cursor:pointer;" onclick="openArticleModal('Visual Pacing', 'Sep 05, 2026', 'Sound Design & Speed Ramping: The Secret Recipe for 80%+ Audience Retention', '<p>More than 50% of viewer retention comes from what they hear, not just what they see. Combining rhythmic visual cuts with atmospheric sound design creates an immersive momentum that keeps viewers watching until the final second.</p><h4 style=\'margin-top:20px; color:#111;\'>1. The First 5-Second Hook</h4><p>Start with a high-energy visual hook and immediate sound impact (whooshes, risers, and vocal clarity). Eliminate silent pauses and awkward breaths to lock attention instantly.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Sound Layering (SFX + Ambience + Beats)</h4><p>Every cut or text graphic should have sound feedback—a subtle pop, keyboard tap, or cinematic whoosh. Duck background music under the voice track so the message remains crystal clear.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Speed Ramping and Match Cuts</h4><p>Use smooth speed ramps between slow-motion b-roll and normal-speed clips to emphasize punchlines, transitions, and maintain a snappy cadence.</p>', '/_nuxt/blog2.DjGpjiaV.jpg')">
+                      <a href="javascript:void(0);"><img src="/_nuxt/blog2.DjGpjiaV.jpg" alt="Visual Pacing" /></a>
+                      <div class="blog-post-category"><a href="javascript:void(0);">Visual Pacing</a></div>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="blog-post-caption">
                       <h3>Posted on Sep 05</h3>
-                      <h2><a class="link-decoration" href="#">The Secret to High Audience Retention: Engaging
-                          Scripts</a></h2>
-                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                      <h2><a class="link-decoration" href="javascript:void(0);" onclick="openArticleModal('Visual Pacing', 'Sep 05, 2026', 'Sound Design & Speed Ramping: The Secret Recipe for 80%+ Audience Retention', '<p>More than 50% of viewer retention comes from what they hear, not just what they see. Combining rhythmic visual cuts with atmospheric sound design creates an immersive momentum that keeps viewers watching until the final second.</p><h4 style=\'margin-top:20px; color:#111;\'>1. The First 5-Second Hook</h4><p>Start with a high-energy visual hook and immediate sound impact (whooshes, risers, and vocal clarity). Eliminate silent pauses and awkward breaths to lock attention instantly.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Sound Layering (SFX + Ambience + Beats)</h4><p>Every cut or text graphic should have sound feedback—a subtle pop, keyboard tap, or cinematic whoosh. Duck background music under the voice track so the message remains crystal clear.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Speed Ramping and Match Cuts</h4><p>Use smooth speed ramps between slow-motion b-roll and normal-speed clips to emphasize punchlines, transitions, and maintain a snappy cadence.</p>', '/_nuxt/blog2.DjGpjiaV.jpg')">Sound Design & Speed Ramping: The Secret Recipe for 80%+ Audience Retention</a></h2>
+                      <p style="color:#666; font-size:14px; margin-bottom:15px; line-height:1.6;">Discover how synchronized foley sound effects, rhythmic cuts, and micro-zooms prevent viewer drop-off in the first 30 seconds.</p>
+                      <a class="theme-btn theme-btn-two" href="javascript:void(0);" onclick="openArticleModal('Visual Pacing', 'Sep 05, 2026', 'Sound Design & Speed Ramping: The Secret Recipe for 80%+ Audience Retention', '<p>More than 50% of viewer retention comes from what they hear, not just what they see. Combining rhythmic visual cuts with atmospheric sound design creates an immersive momentum that keeps viewers watching until the final second.</p><h4 style=\'margin-top:20px; color:#111;\'>1. The First 5-Second Hook</h4><p>Start with a high-energy visual hook and immediate sound impact (whooshes, risers, and vocal clarity). Eliminate silent pauses and awkward breaths to lock attention instantly.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Sound Layering (SFX + Ambience + Beats)</h4><p>Every cut or text graphic should have sound feedback—a subtle pop, keyboard tap, or cinematic whoosh. Duck background music under the voice track so the message remains crystal clear.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Speed Ramping and Match Cuts</h4><p>Use smooth speed ramps between slow-motion b-roll and normal-speed clips to emphasize punchlines, transitions, and maintain a snappy cadence.</p>', '/_nuxt/blog2.DjGpjiaV.jpg')">Read Article <i class="ri-arrow-right-line"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="row blog-post-box align-items-center">
                   <div class="col-lg-6">
-                    <div class="blog-post-img">
-                      <a href="#"><img src="/_nuxt/blog3.Dj70OZXw.jpg" alt="" /></a>
-                      <div class="blog-post-category"><a href="#">Video Editing</a></div>
+                    <div class="blog-post-img" style="cursor:pointer;" onclick="openArticleModal('Short-Form Video', 'Sep 12, 2026', 'Viral Video Editing Blueprint: Crafting High-Impact Reels and YouTube Shorts', '<p>Short-form video algorithms heavily reward high completion rates and repeat loops. Crafting a viral Reel or Short requires specific visual pacing designed for fast mobile scrollers.</p><h4 style=\'margin-top:20px; color:#111;\'>1. Kinetic Subtitles & Word Highlighting</h4><p>Over 70% of social media users scroll without headphones. Large, dynamic subtitles that highlight words as they are spoken keep eyes locked to the center of the frame.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Seamless Audio & Visual Loops</h4><p>Match the closing sentence to the opening hook word-for-word. When the short finishes, viewers seamlessly roll back into the beginning without noticing the reset, doubling completion stats.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Visual Motion Every 2 Seconds</h4><p>Use punch-in zooms, b-roll overlays, animated stickers, and sound accents every 2 seconds to retain viewer dopamine and block doom-scrolling.</p>', '/_nuxt/blog3.Dj70OZXw.jpg')">
+                      <a href="javascript:void(0);"><img src="/_nuxt/blog3.Dj70OZXw.jpg" alt="Short-Form Editing" /></a>
+                      <div class="blog-post-category"><a href="javascript:void(0);">Short-Form Editing</a></div>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="blog-post-caption">
                       <h3>Posted on Sep 12</h3>
-                      <h2><a class="link-decoration" href="#">Top 5 Video Editing Trends for Modern Content Creators</a>
+                      <h2><a class="link-decoration" href="javascript:void(0);" onclick="openArticleModal('Short-Form Video', 'Sep 12, 2026', 'Viral Video Editing Blueprint: Crafting High-Impact Reels and YouTube Shorts', '<p>Short-form video algorithms heavily reward high completion rates and repeat loops. Crafting a viral Reel or Short requires specific visual pacing designed for fast mobile scrollers.</p><h4 style=\'margin-top:20px; color:#111;\'>1. Kinetic Subtitles & Word Highlighting</h4><p>Over 70% of social media users scroll without headphones. Large, dynamic subtitles that highlight words as they are spoken keep eyes locked to the center of the frame.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Seamless Audio & Visual Loops</h4><p>Match the closing sentence to the opening hook word-for-word. When the short finishes, viewers seamlessly roll back into the beginning without noticing the reset, doubling completion stats.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Visual Motion Every 2 Seconds</h4><p>Use punch-in zooms, b-roll overlays, animated stickers, and sound accents every 2 seconds to retain viewer dopamine and block doom-scrolling.</p>', '/_nuxt/blog3.Dj70OZXw.jpg')">Viral Video Editing Blueprint: Crafting High-Impact Reels and YouTube Shorts</a>
                       </h2>
-                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                      <p style="color:#666; font-size:14px; margin-bottom:15px; line-height:1.6;">Step-by-step breakdown of modern short-form editing: kinetic subtitles, seamless loop transitions, and retention hooks.</p>
+                      <a class="theme-btn theme-btn-two" href="javascript:void(0);" onclick="openArticleModal('Short-Form Video', 'Sep 12, 2026', 'Viral Video Editing Blueprint: Crafting High-Impact Reels and YouTube Shorts', '<p>Short-form video algorithms heavily reward high completion rates and repeat loops. Crafting a viral Reel or Short requires specific visual pacing designed for fast mobile scrollers.</p><h4 style=\'margin-top:20px; color:#111;\'>1. Kinetic Subtitles & Word Highlighting</h4><p>Over 70% of social media users scroll without headphones. Large, dynamic subtitles that highlight words as they are spoken keep eyes locked to the center of the frame.</p><h4 style=\'margin-top:20px; color:#111;\'>2. Seamless Audio & Visual Loops</h4><p>Match the closing sentence to the opening hook word-for-word. When the short finishes, viewers seamlessly roll back into the beginning without noticing the reset, doubling completion stats.</p><h4 style=\'margin-top:20px; color:#111;\'>3. Visual Motion Every 2 Seconds</h4><p>Use punch-in zooms, b-roll overlays, animated stickers, and sound accents every 2 seconds to retain viewer dopamine and block doom-scrolling.</p>', '/_nuxt/blog3.Dj70OZXw.jpg')">Read Article <i class="ri-arrow-right-line"></i></a>
                     </div>
                   </div>
                 </div>
@@ -69715,29 +69720,76 @@ Copyright (c) 2015 Daniel Eden
       var modal = document.getElementById('serviceModal');
       if (modal) modal.style.display = 'none';
     }
-    window.onclick = function (event) {
-      var modal = document.getElementById('serviceModal');
-      if (event.target == modal) {
-        modal.style.display = 'none';
+
+    function openArticleModal(category, date, title, bodyHtml, imgSrc) {
+      var catEl = document.getElementById('articleCategory');
+      var dateEl = document.getElementById('articleDate');
+      var titleEl = document.getElementById('articleTitle');
+      var bodyEl = document.getElementById('articleBody');
+      var imgEl = document.getElementById('articleImage');
+
+      if (catEl) catEl.innerText = category;
+      if (dateEl) dateEl.innerText = date;
+      if (titleEl) titleEl.innerText = title;
+      if (bodyEl) bodyEl.innerHTML = bodyHtml;
+      if (imgEl) imgEl.src = imgSrc;
+
+      var modal = document.getElementById('articleModal');
+      if (modal) {
+        modal.style.display = 'flex';
+        setTimeout(function () { modal.style.opacity = '1'; }, 10);
       }
+    }
+
+    function closeArticleModal() {
+      var modal = document.getElementById('articleModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+      var sModal = document.getElementById('serviceModal');
+      var aModal = document.getElementById('articleModal');
+      if (event.target == sModal) sModal.style.display = 'none';
+      if (event.target == aModal) aModal.style.display = 'none';
     }
   </script>
 
+  <!-- Article Reader Modal -->
+  <div id="articleModal"
+    style="display:none; position:fixed; z-index:999999; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.75); align-items: center; justify-content: center; backdrop-filter: blur(8px); padding: 20px;">
+    <div
+      style="background-color:#ffffff; margin:auto; padding:35px; width:95%; max-width:850px; max-height:88vh; overflow-y:auto; border-radius:16px; color:#333; position:relative; box-shadow: 0 25px 60px rgba(0,0,0,0.4); font-family: 'Poppins', sans-serif;">
+      <div onclick="closeArticleModal()"
+        style="position:absolute; top:18px; right:18px; background-color:#111111; color:#ffffff !important; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px; cursor:pointer; font-weight:bold; z-index:10; line-height:1;">
+        &times;</div>
+      <div style="margin-bottom: 12px;">
+        <span id="articleCategory" style="display:inline-block; background:#111; color:#fff; border-radius:20px; padding:4px 14px; font-size:12px; font-weight:700; text-transform:uppercase;">CATEGORY</span>
+        <span id="articleDate" style="color:#888; font-size:13px; margin-left:12px;">Date</span>
+      </div>
+      <h2 id="articleTitle" style="color:#111 !important; font-family:'Oswald', sans-serif !important; font-size:26px !important; font-weight:700 !important; line-height:1.3; margin-bottom:18px; text-transform:uppercase;">TITLE</h2>
+      <img id="articleImage" src="" alt="Article Banner" style="width:100%; max-height:340px; object-fit:cover; border-radius:12px; margin-bottom:20px;" />
+      <div id="articleBody" style="color:#444; font-size:15px; line-height:1.8; text-align:left;"></div>
+      <div style="margin-top:25px; text-align:left;">
+        <a href="#contact" onclick="closeArticleModal()" class="theme-btn theme-btn-two" style="display:inline-block; padding:10px 24px; border-radius:25px; font-size:14px;">Work With Farhan <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Smooth scrolling for all hash links with header offset
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
           var targetId = this.getAttribute('href');
           if (targetId === '#' || targetId === '' || targetId.length <= 1) return;
-          
+
           var targetEl = document.querySelector(targetId);
           if (targetEl) {
             e.preventDefault();
-            
+
             // Close mobile menu / sidebar if open
             var sidebars = document.querySelectorAll('.mobile-menu, .sidebar, .menu-sidebar, .mean-nav, .navbar-collapse, .side-menu-wrapper');
-            sidebars.forEach(function(s) {
+            sidebars.forEach(function (s) {
               s.classList.remove('show');
               s.classList.remove('active');
             });

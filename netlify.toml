@@ -6,9 +6,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
-  GIT_LFS_ENABLED = "false"
-  GIT_LFS_SKIP_SMUDGE = "1"
-
 
 # Redirects
 [[redirects]]
